@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  OOP_practice.cpp
+c:\users\mati\documents\visual studio 2015\projects\oop\oop_practice\oop_practice\oop_practice.cpp(51): error C2676: binary '==': 'const Account' does not define this operator or a conversion to a type acceptable to the predefined operator
+c:\users\mati\documents\visual studio 2015\projects\oop\oop_practice\oop_practice\oop_practice.cpp(51): error C2059: syntax error: ')'
