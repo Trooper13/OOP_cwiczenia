@@ -47,11 +47,11 @@ int main()
 
 const Couple *bestClient(const Couple *tablicaPar, int size, Banks bank)
 {
-	int max, sum, idx;
+	int max, sum, idx = -1;
 	for (int i = 0; i<size; i++)
 		while (tablicaPar[i].he.account.bank == bank || tablicaPar[i].she.account.bank == bank)
 		{
-
+			
 		}
 
 }

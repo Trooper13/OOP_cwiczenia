@@ -29,7 +29,7 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OOP_practice.cpp">
+    <ClCompile Include="..\..\..\..\..\Studia\REPO studia\Progr_Obiektowe\Cwiczenia2\cw2_zad1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
