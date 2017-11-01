@@ -2,9 +2,9 @@
 // Date: 25.10.2017
 // WIT
 
+#include "stdafx.h"
 #include <iostream>
 #include <cmath>
-#include "stdafx.h"
 
 using namespace std;
 
@@ -66,6 +66,7 @@ public:
 
 		this->num = temp_num / temp_nwd;
 		this->denum = temp_denum / temp_nwd;
+		return *this;
 	}
 	static Frac add(const Frac& f1, const Frac& f2) {
 		int temp_num = f1.num*f2.denum + f1.denum*f2.num;
@@ -96,6 +97,7 @@ int main() {
 	Frac f2(4, 6);
 	//f1.show();
 	f1.add(Frac(3, 5)).show();
-	
-	
+
+	getchar();
+	return 0;
 }
