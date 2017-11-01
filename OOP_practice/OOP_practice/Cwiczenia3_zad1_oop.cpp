@@ -2,7 +2,7 @@
 // Date: 25.10.2017
 // WIT
 
-#include "stdafx.h"
+#include "stdafx.h" // <= musi byæ na samym szczycie, inaczej s¹ b³êdy kompilacji
 #include <iostream>
 #include <cmath>
 
@@ -54,8 +54,7 @@ public:
 		this->denum = d / nwd;
 	}
 	void show() {
-		cout << num << "/" << denum << endl; // <<<WTF?? dlaczego siê tego czepia?? Error List
-		void show();
+		cout << num << "/" << denum << endl;
 	}
 	
 	Frac& add(const Frac& f) {
@@ -82,21 +81,21 @@ public:
 };
 
 int main() {
-	//// 2 * ( (2 + 4/10)*5 - 4 ) / (24/15) = 10
+	// 2 * ( (2 + 4/10)*5 - 4 ) / (24/15) = 10
 	//Frac f1 = Frac(2).mul(Frac::sub(Frac(5).mul(
-	Frac::add(Frac(2), Frac(4, 10));
+	//Frac::add(Frac(2), Frac(4, 10));
 	//Frac(4))).div(Frac(24,15));
-	//
+	
 	//// 7 - 1/3 + (2/6 * 1114) / 111
 	//Frac f2 = Frac(7).sub(Frac(1,3)).add(
 	//Frac::div(Frac(2,6).mul(Frac(1114)),Frac(111)));
 	//f1.show(); std::cout << " ";
 	//f2.show(); std::cout << std::endl;
-	//
+	
 	Frac f1(3, 5);
 	Frac f2(4, 6);
-	//f1.show();
-	f1.add(Frac(3, 5)).show();
+	f1.show();
+	f1.add(Frac(3, 10)).show();
 
 	getchar();
 	return 0;
