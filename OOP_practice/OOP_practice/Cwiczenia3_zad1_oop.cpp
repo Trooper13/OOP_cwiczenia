@@ -1,8 +1,8 @@
-// Author: Mateusz Mitura
+ï»¿// Author: Mateusz Mitura
 // Date: 25.10.2017
 // WIT
 
-#include "stdafx.h" // <= musi byæ na samym szczycie, inaczej s¹ b³êdy kompilacji
+#include "stdafx.h" // <= musi byÃ¦ na samym szczycie, inaczej sÂ¹ bÂ³Ãªdy kompilacji
 #include <iostream>
 #include <cmath>
 
@@ -12,9 +12,9 @@ class Frac {
 
 	int num, denum;
 
-	/*Funkcja sprawdzajaca czy przypadkiem ¿adna z liczb nie jest ujemna a nastêpnie
-	  znalezienie najwiekszego wspólnego dzielnika liczb, aby wprowadzony u³amek
-	  sprowadziæ do formy "skróconej" - algorytm Euklidesa*/
+	/*Funkcja sprawdzajaca czy przypadkiem Å¼adna z liczb nie jest ujemna a nastÃªpnie
+	  znalezienie najwiekszego wspÃ³lnego dzielnika liczb, aby wprowadzony uÂ³amek
+	  sprowadziÃ¦ do formy "skrÃ³conej" - algorytm Euklidesa*/
 	static int NWD(int a, int b) {
 		if (a<0) a = -a;
 		if (b<0) b = -b;
@@ -80,7 +80,8 @@ public:
 
 };
 
-int main() {
+int main() 
+{
 	// 2 * ( (2 + 4/10)*5 - 4 ) / (24/15) = 10
 	//Frac f1 = Frac(2).mul(Frac::sub(Frac(5).mul(
 	//Frac::add(Frac(2), Frac(4, 10));
